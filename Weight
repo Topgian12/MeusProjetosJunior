@@ -1,0 +1,30 @@
+peso = float(input('Seu peso atual: '))
+ah = float(input('Sua altura: '))
+imc = (peso / ah) / ah
+print('Seu imc é de {:.1f}.'.format(imc))
+if imc < 18.5:
+    print('Você está abaixo do peso.')
+    peso1 = 18.5 * ah * ah
+    difpeso = peso1 - peso
+    print('E para chegar no seu peso ideal vc precisa ganhar {:.2f} kilos.'.format(difpeso))
+elif imc >= 18.5 and imc < 25:
+    print('Você está com o peso ideal.')
+elif imc >= 25 and imc < 30:
+    print('Você está sobrepeso.')
+    peso2 = 25 * ah * ah
+    difpeso2 = peso - peso2
+    print('E vc precisa perder {:.2f} kilos.'.format(difpeso2))
+elif imc >= 30 and imc < 40:
+    print('Você está obeso.')
+    peso3 = 25 * ah * ah
+    difpeso3 = peso - peso3
+    print('E vc precisa perder {:.2f} kilos.'.format(difpeso3))
+else:
+    print('Você está obeso mórbido.')
+    peso4 = 25 * ah * ah
+    difpeso4 = peso - peso4
+    print('E vc precisa perder {:.2f} kilos.'.format(difpeso4))
+
+
+
+    print('OBESIDADE MÓRBIDA')
